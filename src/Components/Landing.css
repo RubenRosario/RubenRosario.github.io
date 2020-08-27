@@ -1,0 +1,44 @@
+.landing {
+  background: #a27035;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.landing-item {
+  display: flex;
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+}
+.about {
+}
+.education {
+  /*   background: #533e2d; */
+}
+.skills {
+  /*   background: #b88b4a; */
+}
+.interests {
+  /*   background: #ddca7d; */
+}
+
+@media screen and (max-width: 500px) {
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100%;
+  }
+}

@@ -1,32 +1,68 @@
 import React from 'react';
+import Polygon from '../3d models/Polygon';
+
+import './Landing.css';
 
 const Landing = (props) => {
-  const landing = props.landingData;
   return (
-    <section class="resume-section" id="about">
-      <div class="resume-section-content">
-        <h1 class="mb-0">
-          {landing.lastName}
-          <span class="text-primary">{landing.firstName}</span>
-        </h1>
-        <div class="subheading mb-5">
-          {`${landing.address} - ${landing.phoneNumber} - `}
-          <a href="mailto:name@email.com">{landing.email}</a>
+    <section className="landing">
+      <div className="link-container">
+        <div className="landing-item about">
+          <Polygon
+            polygonType="octahedron"
+            illoSelector="octahedron-container"
+            colors={[
+              '#211912',
+              '#533e2d',
+              '#211912',
+              '#533e2d',
+              '#211912',
+              '#533e2d',
+            ]}
+          />
         </div>
-        <p class="lead mb-5">{landing.bio}</p>
-        <div class="social-icons">
-          <a class="social-icon" href="#">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a class="social-icon" href="#">
-            <i class="fab fa-github"></i>
-          </a>
-          <a class="social-icon" href="#">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a class="social-icon" href="#">
-            <i class="fab fa-facebook-f"></i>
-          </a>
+        <div className="landing-item education">
+          <Polygon
+            polygonType="dodecahedron"
+            illoSelector="dodecahedron-container"
+            colors={[
+              '#423224',
+              '#533E2D',
+              '#74573f',
+              '#644a36',
+              '#856348',
+              '#533E2D',
+              '#74573f',
+            ]}
+          />
+        </div>
+        <div className="landing-item skills">
+          <Polygon
+            polygonType="tetrahedron"
+            illoSelector="tetrahedron-container"
+            colors={[
+              '#B88B4A',
+              '#a77d42',
+              '#bf975c',
+              '#c6a26f',
+              '#B88B4A',
+              '#c6a26f',
+            ]}
+          />
+        </div>
+        <div className="landing-item interests">
+          <Polygon
+            polygonType="icosahedron"
+            illoSelector="icosahedron-container"
+            colors={[
+              '#d8c269',
+              '#e2d291',
+              '#e8daa5',
+              '#d8c269',
+              '#d2ba55',
+              '#ede3ba',
+            ]}
+          />
         </div>
       </div>
     </section>

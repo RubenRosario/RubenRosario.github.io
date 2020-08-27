@@ -1,0 +1,8 @@
+.polygon-container {
+  display: flex;
+  width: 200px;
+  height: 100px;
+  cursor: move;
+  justify-content: center;
+  align-items: center;
+}
