@@ -5,8 +5,17 @@ import './Landing.css';
 
 const Landing = (props) => {
   return (
-    <section className="landing">
-      <div className="link-container">
+    <main className="landing">
+      <section section className="welcome-container">
+        <p className="welcome-message">
+          <span className="greeting">Hello there!</span>
+          <span className="name">I am Ruben.</span>
+          <span className="message">
+            Welcome to my website! Please choose a stone to start.
+          </span>{' '}
+        </p>
+      </section>
+      <section className="polygon-container">
         <div className="landing-item about">
           <Polygon
             polygonType="octahedron"
@@ -23,6 +32,20 @@ const Landing = (props) => {
         </div>
         <div className="landing-item education">
           <Polygon
+            polygonType="icosahedron"
+            illoSelector="icosahedron-container"
+            colors={[
+              '#d8c269',
+              '#e2d291',
+              '#e8daa5',
+              '#d8c269',
+              '#d2ba55',
+              '#ede3ba',
+            ]}
+          />
+        </div>
+        <div className="landing-item skills">
+          <Polygon
             polygonType="dodecahedron"
             illoSelector="dodecahedron-container"
             colors={[
@@ -36,7 +59,7 @@ const Landing = (props) => {
             ]}
           />
         </div>
-        <div className="landing-item skills">
+        <div className="landing-item interests">
           <Polygon
             polygonType="tetrahedron"
             illoSelector="tetrahedron-container"
@@ -50,22 +73,8 @@ const Landing = (props) => {
             ]}
           />
         </div>
-        <div className="landing-item interests">
-          <Polygon
-            polygonType="icosahedron"
-            illoSelector="icosahedron-container"
-            colors={[
-              '#d8c269',
-              '#e2d291',
-              '#e8daa5',
-              '#d8c269',
-              '#d2ba55',
-              '#ede3ba',
-            ]}
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
   );
 };
 

@@ -1,17 +1,47 @@
 .landing {
-  background: #a27035;
+  /* background: #a27035; */
+  background-image: radial-gradient(
+    circle,
+    #b88b4a,
+    #b38445,
+    #ad7d3f,
+    #a8773a,
+    #a27035
+  );
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+.welcome-container {
+  display: flex;
+  position: relative;
+  font-size: 2rem;
   justify-content: center;
-  align-items: center;
+  color: var(--dark-chocolate);
+}
+.welcome-container .greeting {
+  font-family: 'YouthTouch';
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+.welcome-container .name {
+  font-family: 'Classico';
+  display: block;
+  text-align: center;
+  font-size: 100px;
+}
+.welcome-container .message {
+  font-family: 'YouthTouch';
+  display: block;
+  text-align: center;
+  font-size: 50px;
 }
 
-.link-container {
+.polygon-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 100%;
+  align-self: center;
 }
 
 .landing-item {
@@ -20,20 +50,9 @@
   width: 200px;
   height: 200px;
 }
-.about {
-}
-.education {
-  /*   background: #533e2d; */
-}
-.skills {
-  /*   background: #b88b4a; */
-}
-.interests {
-  /*   background: #ddca7d; */
-}
 
 @media screen and (max-width: 500px) {
-  .link-container {
+  .polygon-container {
     display: flex;
     justify-content: center;
     align-items: center;
