@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Classico';
+  src: local('Classico'), url('./fonts/Classico-free.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MightyBruch';
+  src: local('MightyBruch'),
+    url('./fonts/MightyBrushDemo.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'YouthTouch';
+  src: local('YouthTouch'),
+    url('./fonts/YouthTouchDemoRegular-4VwY.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
+
+:root {
+  --dark-chocolate: #241f19;
+  --chocolate: #533e2d;
+  --caramel: #a27035;
+  --camel: #b88b4a;
+  --sand: #ddca7d;
+}
+
+html,
+body,
+#root,
+.App {
+  margin: 0px;
+  padding: 0px;
+  max-height: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+section {
+  display: block;
+}
