@@ -6,8 +6,8 @@ import './Landing.css';
 const Landing = (props) => {
   return (
     <main className="landing">
-      <section section className="welcome-container">
-        <p className="welcome-message">
+      <section className="welcome-container">
+        <p className="welcome-message fade-in">
           <span className="greeting">Hello there!</span>
           <span className="name">I am Ruben.</span>
           <span className="message">
@@ -16,7 +16,7 @@ const Landing = (props) => {
         </p>
       </section>
       <section className="polygon-container">
-        <div className="landing-item about">
+        <div className={`landing-item about bounce-in-top1`}>
           <Polygon
             polygonType="octahedron"
             illoSelector="octahedron-container"
@@ -30,7 +30,7 @@ const Landing = (props) => {
             ]}
           />
         </div>
-        <div className="landing-item education">
+        <div className="landing-item education bounce-in-top2">
           <Polygon
             polygonType="icosahedron"
             illoSelector="icosahedron-container"
@@ -44,7 +44,7 @@ const Landing = (props) => {
             ]}
           />
         </div>
-        <div className="landing-item skills">
+        <div className="landing-item skills bounce-in-top3">
           <Polygon
             polygonType="dodecahedron"
             illoSelector="dodecahedron-container"
@@ -59,7 +59,7 @@ const Landing = (props) => {
             ]}
           />
         </div>
-        <div className="landing-item interests">
+        <div className="landing-item interests bounce-in-top4">
           <Polygon
             polygonType="tetrahedron"
             illoSelector="tetrahedron-container"

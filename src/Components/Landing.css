@@ -51,6 +51,27 @@
   height: 200px;
 }
 
+.bounce-in-top1 {
+  -webkit-animation: bounce-in-top 1.5s 0.5s both;
+  animation: bounce-in-top 1.5s 0.5s both;
+}
+.bounce-in-top2 {
+  -webkit-animation: bounce-in-top 1.5s 1s both;
+  animation: bounce-in-top 1.5s 1s both;
+}
+.bounce-in-top3 {
+  -webkit-animation: bounce-in-top 1.5s 1.5s both;
+  animation: bounce-in-top 1.5s 1.5s both;
+}
+.bounce-in-top4 {
+  -webkit-animation: bounce-in-top 1.5s 2s both;
+  animation: bounce-in-top 1.5s 2s both;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
+}
 @media screen and (max-width: 500px) {
   .polygon-container {
     display: flex;

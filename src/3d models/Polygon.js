@@ -33,7 +33,7 @@ const Polygon = (props) => {
   return <canvas width="200" height="200" className={selector}></canvas>;
 };
 
-const octahedron = (colors, selector) => {
+const octahedron = (colors, selector, scalePercentage) => {
   let illustration = new Zdog.Illustration({
     element: `.${selector}`,
   });
@@ -43,7 +43,6 @@ const octahedron = (colors, selector) => {
     translate: { x: -4, y: 4 },
     scale: 90,
   });
-
   let colorWheel = colors;
 
   // radius of triangle with side length = 1
