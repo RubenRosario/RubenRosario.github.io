@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Landing from './Components/Landing';
+import Homepage from './pages/Homepage';
 import profileData from './profileData.json';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Landing></Landing>
+        <Homepage />
       </div>
     );
   }
