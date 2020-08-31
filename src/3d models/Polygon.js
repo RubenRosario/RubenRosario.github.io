@@ -30,7 +30,14 @@ const Polygon = (props) => {
     }
   }, [colors, selector, polygonType]);
 
-  return <canvas width="200" height="200" className={selector}></canvas>;
+  return (
+    <canvas
+      width="200"
+      height="200"
+      className={selector}
+      onMouseOver={props.onMouseOver}
+    ></canvas>
+  );
 };
 
 const octahedron = (colors, selector, scalePercentage) => {

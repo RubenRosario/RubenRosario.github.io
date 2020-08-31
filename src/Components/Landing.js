@@ -1,5 +1,5 @@
 import React from 'react';
-import Polygon from '../3d models/Polygon';
+import PolygonContainer from '../Components/PolygonContainer';
 
 import './Landing.css';
 
@@ -15,11 +15,11 @@ const Landing = (props) => {
           </span>{' '}
         </p>
       </section>
-      <section className="polygon-container">
-        <div className={`landing-item about bounce-in-top1`}>
-          <Polygon
+      <section className="polygons-container">
+        <div className="landing-item about bounce-in-top1">
+          <PolygonContainer
+            polygonName="About me"
             polygonType="octahedron"
-            illoSelector="octahedron-container"
             colors={[
               '#211912',
               '#533e2d',
@@ -31,7 +31,8 @@ const Landing = (props) => {
           />
         </div>
         <div className="landing-item education bounce-in-top2">
-          <Polygon
+          <PolygonContainer
+            polygonName="Education"
             polygonType="icosahedron"
             illoSelector="icosahedron-container"
             colors={[
@@ -45,7 +46,8 @@ const Landing = (props) => {
           />
         </div>
         <div className="landing-item skills bounce-in-top3">
-          <Polygon
+          <PolygonContainer
+            polygonName="Skills"
             polygonType="dodecahedron"
             illoSelector="dodecahedron-container"
             colors={[
@@ -60,7 +62,8 @@ const Landing = (props) => {
           />
         </div>
         <div className="landing-item interests bounce-in-top4">
-          <Polygon
+          <PolygonContainer
+            polygonName="Interests"
             polygonType="tetrahedron"
             illoSelector="tetrahedron-container"
             colors={[
