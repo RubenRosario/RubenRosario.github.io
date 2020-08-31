@@ -11,12 +11,31 @@ const PolygonContainer = (props) => {
   const [isNameShowed, showName] = useState('polygon-name-hide');
 
   const onMouseOverHandler = () => {
-    showName('polygon-name-show');
+    showName(`polygon-name-show tracking-in-expand ${textColor}`);
   };
 
   const onMouseLeaveHandler = () => {
-    showName('polygon-name-hide');
+    showName('polygon-name-hide ');
   };
+
+  // Set text color based on polygon shape
+  /*tetrahedron icosahedron dodecahedron octahedron*/
+  let textColor;
+  switch (polygonType) {
+    case 'tetrahedron':
+      textColor = 'chocolate';
+      break;
+    case 'icosahedron':
+      textColor = 'dark-chocolate';
+      break;
+    case 'dodecahedron':
+      textColor = 'sand';
+      break;
+    case 'octahedron':
+      textColor = 'camel';
+      break;
+    default:
+  }
 
   return (
     <React.Fragment>
