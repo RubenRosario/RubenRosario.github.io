@@ -4,6 +4,14 @@ object-assign
 @license MIT
 */
 
+/*!
+ * Zdog v1.1.2
+ * Round, flat, designer-friendly pseudo-3D engine
+ * Licensed MIT
+ * https://zzz.dog
+ * Copyright 2020 Metafizzy
+ */
+
 /** @license React v0.19.1
  * scheduler.production.min.js
  *
