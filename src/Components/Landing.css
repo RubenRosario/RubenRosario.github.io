@@ -15,8 +15,9 @@
 .welcome-container {
   display: flex;
   position: relative;
-  font-size: 2rem;
+  top: 30px;
   justify-content: center;
+  padding: 30px;
   color: var(--dark-chocolate);
 }
 .welcome-container .greeting {
@@ -40,15 +41,13 @@
 
 .polygons-container {
   display: flex;
-  justify-content: center;
+  position: relative;
+  justify-content: space-around;
   align-self: center;
 }
 
 .landing-item {
   display: flex;
-  margin: 40px;
-  width: 200px;
-  height: 200px;
 }
 
 .bounce-in-top1 {
@@ -56,16 +55,16 @@
   animation: bounce-in-top 1.5s 0.5s both;
 }
 .bounce-in-top2 {
+  -webkit-animation: bounce-in-top 1.5s 0.7s both;
+  animation: bounce-in-top 1.5s 0.7s both;
+}
+.bounce-in-top3 {
   -webkit-animation: bounce-in-top 1.5s 1s both;
   animation: bounce-in-top 1.5s 1s both;
 }
-.bounce-in-top3 {
-  -webkit-animation: bounce-in-top 1.5s 1.5s both;
-  animation: bounce-in-top 1.5s 1.5s both;
-}
 .bounce-in-top4 {
-  -webkit-animation: bounce-in-top 1.5s 2s both;
-  animation: bounce-in-top 1.5s 2s both;
+  -webkit-animation: bounce-in-top 1.5s 1.3s both;
+  animation: bounce-in-top 1.5s 1.3s both;
 }
 
 .fade-in {
@@ -73,12 +72,25 @@
   animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 3s both;
 }
 @media screen and (max-width: 500px) {
-  .polygon-container {
+  .welcome-container .greeting,
+  .welcome-container .message {
+    font-size: 40px;
+  }
+  .welcome-container .name {
+    font-size: 60px;
+  }
+  .polygons-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    gap: 1px 1px;
+  }
+  /*   .polygons-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100px;
+    width: 100%;
     height: 100%;
-  }
+  } */
 }

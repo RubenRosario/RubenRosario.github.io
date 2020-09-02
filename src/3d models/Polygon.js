@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import Zdog from 'zdog';
 
+import './Polygon.css';
+
 const TAU = Zdog.TAU;
 const ROOT3 = Math.sqrt(3);
 const ROOT5 = Math.sqrt(5);
