@@ -1,23 +1,24 @@
 .landing {
   /* background: #a27035; */
-  background-image: radial-gradient(
-    circle,
-    #b88b4a,
-    #b38445,
-    #ad7d3f,
-    #a8773a,
-    #a27035
+  background-image: linear-gradient(
+    to bottom,
+    #a27035,
+    #b18645,
+    #c09c56,
+    #cfb369,
+    #ddca7d
   );
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .welcome-container {
+  box-sizing: border-box;
   display: flex;
   position: relative;
   top: 30px;
   justify-content: center;
-  padding: 30px;
   color: var(--dark-chocolate);
 }
 .welcome-container .greeting {
@@ -40,6 +41,8 @@
 }
 
 .polygons-container {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -80,10 +83,10 @@
     font-size: 60px;
   }
   .polygons-container {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 2fr 2fr;
     grid-template-rows: 2fr 2fr;
-    gap: 1px 1px;
   }
   /*   .polygons-container {
     display: flex;
