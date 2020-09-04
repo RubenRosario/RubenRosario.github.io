@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.edc6218a.chunk.css",
+    "main.css": "/static/css/main.f7b1d3b9.chunk.css",
     "main.js": "/static/js/main.a27b93f4.chunk.js",
     "main.js.map": "/static/js/main.a27b93f4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
@@ -8,16 +8,16 @@
     "static/js/2.23a7f0cd.chunk.js": "/static/js/2.23a7f0cd.chunk.js",
     "static/js/2.23a7f0cd.chunk.js.map": "/static/js/2.23a7f0cd.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aa05f53517d7ec99ceb3c6f4d9b2d963.js": "/precache-manifest.aa05f53517d7ec99ceb3c6f4d9b2d963.js",
+    "precache-manifest.fdc7e1429da8da3169d4cb5c3af391d5.js": "/precache-manifest.fdc7e1429da8da3169d4cb5c3af391d5.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.edc6218a.chunk.css.map": "/static/css/main.edc6218a.chunk.css.map",
+    "static/css/main.f7b1d3b9.chunk.css.map": "/static/css/main.f7b1d3b9.chunk.css.map",
     "static/js/2.23a7f0cd.chunk.js.LICENSE.txt": "/static/js/2.23a7f0cd.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/YouthTouchDemoRegular-4VwY.63d75a14.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.ceaf4b5f.js",
     "static/js/2.23a7f0cd.chunk.js",
-    "static/css/main.edc6218a.chunk.css",
+    "static/css/main.f7b1d3b9.chunk.css",
     "static/js/main.a27b93f4.chunk.js"
   ]
 }
