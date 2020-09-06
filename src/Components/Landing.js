@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import PolygonContainer from '../Components/PolygonContainer';
 
 import './Landing.css';
@@ -17,18 +19,20 @@ const Landing = (props) => {
       </section>
       <section className="polygons-container">
         <div className="landing-item about bounce-in-top1">
-          <PolygonContainer
-            polygonName="About me"
-            polygonType="octahedron"
-            colors={[
-              '#211912',
-              '#533e2d',
-              '#211912',
-              '#533e2d',
-              '#211912',
-              '#533e2d',
-            ]}
-          />
+          <Link to="/about">
+            <PolygonContainer
+              polygonName="About me"
+              polygonType="octahedron"
+              colors={[
+                '#211912',
+                '#533e2d',
+                '#211912',
+                '#533e2d',
+                '#211912',
+                '#533e2d',
+              ]}
+            />
+          </Link>
         </div>
         <div className="landing-item education bounce-in-top2">
           <PolygonContainer
